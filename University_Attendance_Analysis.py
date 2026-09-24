@@ -7,17 +7,14 @@ for i in range(n):
 
 threshold = float(input("Enter attendance threshold: "))
 
-# Students below threshold
 count = 0
 for x in attendance:
     if x < threshold:
         count += 1
 
-# Lowest attendance and position
 lowest = min(attendance)
 position = attendance.index(lowest) + 1
 
-# Average
 average = sum(attendance) / n
 
 print("Students below threshold:", count)
