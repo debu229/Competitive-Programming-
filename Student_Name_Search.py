@@ -7,13 +7,11 @@ for i in range(n):
 
 search = input("Enter name to search: ")
 
-# Case-sensitive search
 if search in names:
     print("Case-sensitive: Student found at position", names.index(search) + 1)
 else:
     print("Case-sensitive: Student not found")
 
-# Case-insensitive search
 found = False
 
 for i in range(n):
